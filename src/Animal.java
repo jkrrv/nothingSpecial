@@ -6,15 +6,18 @@ import java.util.Random;
  * Created by James on 11/10/2014.
  */
 public abstract class Animal {
+    /* Create an Animal abstract class. It'll have
+    a protected attribute, of type Point, its location on the map, and
+    a private String attribute, the animal's name. You'll need to add other attributes, as well. */
 
-    private Point location;
+    protected Point location;
     private String name;
-    private Random rNG;
+    protected Random rNG;
 
     public Animal(String name, Random rNG) { /* constructor */
-        this.name=name;
+        this.name = name;
         this.rNG = rNG;
-        this.location.setLocation(this.rNG.nextInt(Main.n),this.rNG.nextInt(Main.n));
+        setStartLocation(new Point(this.rNG.nextInt(Main.n),this.rNG.nextInt(Main.n)));
     }
 
 
@@ -26,7 +29,7 @@ public abstract class Animal {
         return location;
     }
 
-    public void setStartLocation(Point location) {
+    private void setStartLocation(Point location) {
         this.location = location;
     }
 

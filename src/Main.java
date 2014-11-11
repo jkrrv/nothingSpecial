@@ -2,14 +2,14 @@ import java.util.Random;
 
 public class Main {
 
-    public static int n = 5;
-    public static Random rNG = new Random();
+    public static final int n = 5;
+    public static final Random rNG = new Random();
 
     public static void main(String[] args) {
 
+        Chase.playGame();
 
 
-        Animal Cat = new Cat("cat");
 
 
         System.out.println("Hello World!");
