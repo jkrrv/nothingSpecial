@@ -17,7 +17,7 @@ public abstract class Animal {
     public Animal(String name, Random rNG) { /* constructor */
         this.name = name;
         this.rNG = rNG;
-        setStartLocation(new Point(this.rNG.nextInt(Main.n),this.rNG.nextInt(Main.n)));
+        setStartLocation(new Point(this.rNG.nextInt(Chase.n)+1,this.rNG.nextInt(Chase.n)+1));
     }
 
 
