@@ -1,0 +1,8 @@
+<project default="compileAll">
+    <target name="compileAll">
+        <delete failonerror="false">
+            <fileset dir="." includes="*.class" />
+        </delete>
+        <javac srcdir="." includeantruntime="false" />
+    </target>
+</project>
