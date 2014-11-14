@@ -74,9 +74,9 @@ public class Chase {
             // keep doing this until either the above case is met, or the mouse ends the game on his own.
         } while (m.getStatus() == Mouse.STATUS_ALIVE);
         return m.getStatus();
-        }
+    }
 
-        private static void debug(Mouse m, Cat c) {
+    private static void debug(Mouse m, Cat c) {
         System.out.println("Mouse: " + m.getLocation().x + "," + m.getLocation().y + " " + m.getStatus() +
         "  Cat: " + c.getLocation().x + "," + c.getLocation().y);
     }
