@@ -52,7 +52,7 @@ public class Chase {
 
 
         // verify that animals are not starting on the same location
-        while (m.getLocation() == c.getLocation()) {
+        while (m.getLocation().equals(c.getLocation())) {
             m = new Mouse("mouse"); // effectively, re-rerun the constructor.  May be more efficient to make SetStartLocation public and re-call just that method, but that'd be more spaghetti here.
         }
 
